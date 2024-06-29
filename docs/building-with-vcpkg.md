@@ -78,16 +78,18 @@ mainline OpenTelemetry C++ SDK repo as-needed.
 
 ## Using Feature Packages
 
-To install opentelemetry built with standard library API surface classes:
+You can check all the available features for opentelemetry-cpp at [opentelemetry-cpp/vcpkg.json](https://github.com/microsoft/vcpkg/blob/master/ports/opentelemetry-cpp/vcpkg.json)
+
+To install opentelemetry built with the OTLP gRPC exporter in the SDK:
 
 ```console
-vcpkg install opentelemetry[stdlib]
+vcpkg install opentelemetry[otlp-grpc]
 ```
 
-To install opentelemetry built with Abseil API surface classes:
+To install opentelemetry built with the OTLP HTTP exporter in the SDK:
 
 ```console
-vcpkg install opentelemetry[abseil]
+vcpkg install opentelemetry[otlp-http]
 ```
 
 ## Build with vcpkg dependencies
